@@ -9,7 +9,7 @@ import heroFruits from "@/assets/hero-fruits.jpg";
 import main from "@/assets/juices/main.jpeg";
 import chia from "@/assets/juices/chia.jpeg";
 import beetroot from "@/assets/juices/beetroot.jpeg";
-import carrot from "@/assets/juices/carrot.jepg";
+import carrot from "@/assets/juices/carrot.jpeg";
 import moringa from "@/assets/juices/moringa.jpeg";
 import abc from "@/assets/juices/abc.jpeg";
 
@@ -19,7 +19,7 @@ import fb2 from "@/assets/fruit-boxes/fb2.jpeg";
 import fb3 from "@/assets/fruit-boxes/fb3.jpeg";
 
 import amla from "@/assets/whole-fruits/amla.jpeg";
-import mixed from "@/assets/whole-fruits/mixed.jpg"; // if available
+import mixed from "@/assets/whole-fruits/mixed.jpeg"; // if available
 
 
 const Home = () => {
@@ -170,12 +170,12 @@ const Home = () => {
           <Carousel className="max-w-5xl mx-auto">
             <CarouselContent>
               {[
-                { name: "main", img: "/src/assets/juices/main.jpeg" },
-                { name: "Chia Juice", img: "/src/assets/juices/chia.jpeg" },
-                { name: "Beetroot Juice", img: "/src/assets/juices/beetroot.jpeg" },
-                { name: "Carrot Juice", img: "/src/assets/juices/carrot.jpeg" },
-                { name: "Moringa Juice", img: "/src/assets/juices/moringa.jpeg" },
-                { name: "ABC Juice", img: "/src/assets/juices/abc.jpeg" },
+                { name: "main", img: main },
+                { name: "Chia Juice", img: chia },
+                { name: "Beetroot Juice", img: beetroot },
+                { name: "Carrot Juice", img: carrot },
+                { name: "Moringa Juice", img: moringa },
+                { name: "ABC Juice", img: abc },
               ].map((juice, i) => (
                 <CarouselItem key={i} className="md:basis-1/2 lg:basis-1/3">
                   <div className="p-2">
@@ -210,10 +210,10 @@ const Home = () => {
           <Carousel className="max-w-5xl mx-auto">
             <CarouselContent>
               {[
-                { name: "Main Fruit Box", img: "/src/assets/fruit-boxes/main.jpeg" },
-                { name: "Fruit Box 1", img: "/src/assets/fruit-boxes/fb1.jpeg" },
-                { name: "Fruit Box 2", img: "/src/assets/fruit-boxes/fb2.jpeg" },
-                { name: "Fruit Box 3", img: "/src/assets/fruit-boxes/fb3.jpeg" },
+                { name: "Main Fruit Box", img: mainBox },
+                { name: "Fruit Box 1", img: fb1 },
+                { name: "Fruit Box 2", img: fb2 },
+                { name: "Fruit Box 3", img: fb3 },
               ].map((box, i) => (
                 <CarouselItem key={i} className="md:basis-1/2">
                   <div className="p-2">
@@ -248,8 +248,8 @@ const Home = () => {
           <Carousel className="max-w-5xl mx-auto">
             <CarouselContent>
               {[
-                { name: "Amla", img: "/src/assets/whole-fruits/amla.jpeg" },
-                { name: "Mixed Whole Fruits", img: "/src/assets/whole-fruits/mixed.jpg" }, // optional, add if available
+                { name: "Amla", img: amla },
+                { name: "Mixed Whole Fruits", img: mixed }, // optional, add if available
               ].map((fruit, i) => (
                 <CarouselItem key={i}>
                   <div className="p-2">
